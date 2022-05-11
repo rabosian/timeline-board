@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline Service</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <!-- script.js -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+<div class="background-header">
+
+</div>
+<div class="background-body">
+
+</div>
+<div class="wrap">
+    <div class="header">
+        <h2>Timeline Board</h2>
+        <p>
+            cards will be disappeared after 24 hours
+        </p>
+    </div>
+    <div class="area-write">
+            <textarea class="field" placeholder="Enter any words" name="contents" id="contents" cols="30"
+                      rows="10"></textarea>
+        <img src="images/send.png" alt="" onclick="writePost()">
+    </div>
+    <div id="cards-box" class="area-read">
+        <div class="card">
+            <!-- date/username field -->
+            <div class="metadata">
+                <div class="date">
+                    October 10, 2020
+                </div>
+                <div id="1-username" class="username">
+                    anonymous
+                </div>
+            </div>
+            <!-- contents field -->
+            <div class="contents">
+                <div id="1-contents" class="text">
+                    dsafnkalfklewakflekelafkleajfkleafkldsankflenwaklfnekwlafneklwanfkelawnfkelanfkleanfklew
+                </div>
+                <div id="1-editarea" class="edit">
+                    <textarea id="1-textarea" class="te-edit" name="" id="" cols="30" rows="5"></textarea>
+                </div>
+            </div>
+            <!-- footer(btn) field -->
+            <div class="footer">
+                <img id="1-edit" onclick="editPost('1')" class="icon-start-edit" src="images/edit.png" alt="">
+                <img id="1-delete" onclick="deleteOne('1')" class="icon-delete" src="images/delete.png" alt="">
+                <img id="1-submit" onclick="submitEdit('1')" class="icon-end-edit" src="images/done.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
